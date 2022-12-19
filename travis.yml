@@ -1,0 +1,31 @@
+##### Keyfile
+sudo: required
+language: python
+cache: pip
+services:
+- docker
+env:
+  global:
+  - EB_REGION="us-east-1"
+  - secure: secure_AWS_ACCOUNT_ID
+  - secure: secure_AWS_ACCESS_KEY_ID
+  - secure: secure_AWS_SECRET_ACCESS_KEY
+before_install:
+- pip install awscli
+- export PATH=$PATH:$HOME/.local/bin
+script: bash .travis/build.sh
+deploy:
+- provider: script
+  script: bash .travis/docker_push.sh
+  on:
+    branch: master
+- provider: script
+  script: bash .travis/docker_push.sh
+  on:
+    branch: dev
+- provider: script
+  script: bash .travis/docker_push.sh
+  on:
+    branch: sandbox
+notifications:
+  slack: your_slack_application_key_to_send_build_notifications_on_slack_everytime_a_build_is_complete
