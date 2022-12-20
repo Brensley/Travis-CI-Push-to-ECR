@@ -27,5 +27,3 @@ deploy:
   script: bash .travis/docker_push.sh
   on:
     branch: sandbox
-notifications:
-  slack: your_slack_application_key_to_send_build_notifications_on_slack_everytime_a_build_is_complete
