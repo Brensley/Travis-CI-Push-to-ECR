@@ -1,5 +1,5 @@
-##### .travis/build.sh - Code to build the container
-# location .travis/build.sh
+##### build.sh - Code to build the container
+# location build.sh
 
 #!/bin/bash
 

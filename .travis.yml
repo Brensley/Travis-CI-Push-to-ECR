@@ -13,7 +13,7 @@ env:
 before_install:
 - pip3 install awscli
 - export PATH=$PATH:$HOME/.local/bin
-script: bash .travis/build.sh
+script: bash build.sh
 deploy:
 - provider: script
   script: bash .travis/docker_push.sh
