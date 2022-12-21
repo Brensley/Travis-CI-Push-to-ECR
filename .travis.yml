@@ -16,14 +16,14 @@ before_install:
 script: bash build.sh
 deploy:
 - provider: script
-  script: bash .travis/docker_push.sh
+  script: bash docker_push.sh
   on:
     branch: master
 - provider: script
-  script: bash .travis/docker_push.sh
+  script: bash docker_push.sh
   on:
     branch: dev
 - provider: script
-  script: bash .travis/docker_push.sh
+  script: bash docker_push.sh
   on:
     branch: sandbox
