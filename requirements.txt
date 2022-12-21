@@ -1,4 +1,4 @@
 ##### location containers/sample_container/requirements.txt
 
-awscli==1.16.65
-boto3==1.9.193
+awscli==1.15.0
+boto3==1.16.62
