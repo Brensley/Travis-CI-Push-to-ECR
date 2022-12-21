@@ -12,6 +12,5 @@ then
 else
   echo "Branch is sandbox"
   sudo docker build 
-  --build-arg env_type=sandbox 
   -t sample_container_prod -f containers/sample_container/dockerfile .
 fi
