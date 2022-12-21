@@ -6,7 +6,7 @@ services:
 - docker
 env:
   global:
-  - EB_REGION="us-east-2"
+  - EB_REGION="us-east-1"
   - secure: secure_AWS_ACCOUNT_ID
   - secure: secure_AWS_ACCESS_KEY_ID
   - secure: secure_AWS_SECRET_ACCESS_KEY
