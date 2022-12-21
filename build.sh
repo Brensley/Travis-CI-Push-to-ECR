@@ -11,6 +11,5 @@ then
   echo "Branch is dev"
 else
   echo "Branch is sandbox"
-  sudo docker build 
-  -t sample_container_prod -f containers/sample_container/dockerfile .
+  sudo docker build -t sample_container_prod -f containers/sample_container/dockerfile .
 fi
