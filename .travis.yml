@@ -11,7 +11,7 @@ env:
   - secure: secure_AWS_ACCESS_KEY_ID
   - secure: secure_AWS_SECRET_ACCESS_KEY
 before_install:
-- pip install awscli
+- pip3 install awscli
 - export PATH=$PATH:$HOME/.local/bin
 script: bash .travis/build.sh
 deploy:
