@@ -18,11 +18,11 @@ deploy:
 - provider: script
   script: bash docker_push.sh
   on:
-    branch: master
+    branch: main
 - provider: script
   script: bash docker_push.sh
   on:
-    branch: dev
+    branch: main
 - provider: script
   script: bash docker_push.sh
   on:
