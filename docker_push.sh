@@ -26,7 +26,7 @@ elif [[ $TRAVIS_BRANCH == 'dev' ]]
 then
 	SOURCE_IMAGE="sample_container_dev"
 else
-	SOURCE_IMAGE="sample_container_sandbox"
+	SOURCE_IMAGE="bftesting"
 fi
 
 TARGET_IMAGE_LATEST="${REGISTRY_URL}/${SOURCE_IMAGE}:latest"
