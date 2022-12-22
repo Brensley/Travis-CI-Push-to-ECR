@@ -11,9 +11,9 @@ then
   echo "Branch is dev"
 else
   echo "Branch is sandbox"
-   sudo docker build –t foster -f ./.dockerfile .
+   sudo docker build -t sample_container_sandbox -f .dockerfile .
   --build-arg AWS_KEY=$AWS_ACCESS_KEY_ID
   --build-arg AWS_SECRET_KEY=$AWS_SECRET_ACCESS_KEY
   --build-arg env_type=sandbox
-  -t sample_container_prod -f containers/sample_container/dockerfile .
+
 fi
