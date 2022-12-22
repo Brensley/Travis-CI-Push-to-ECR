@@ -12,8 +12,4 @@ then
 else
   echo "Branch is sandbox"
    sudo docker build -t sample_container_sandbox -f .dockerfile .
-  --build-arg AWS_KEY=$AWS_ACCESS_KEY_ID
-  --build-arg AWS_SECRET_KEY=$AWS_SECRET_ACCESS_KEY
-  --build-arg env_type=sandbox
-
 fi
