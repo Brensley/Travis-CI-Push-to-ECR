@@ -27,7 +27,7 @@ ENV AWS_ACCESS_KEY_ID=${AWS_KEY}
 ENV AWS_SECRET_ACCESS_KEY=${AWS_SECRET_KEY}
 
 # COPY folder of code and model
-COPY code /usr/code
+COPY .dockerfile /usr/code
 
 # Set working_directory
 WORKDIR /usr/code
