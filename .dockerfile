@@ -12,7 +12,7 @@ RUN apt-get update
 RUN apt-get install build-essential -y
 
 # Installing Python dependency for model env
-COPY containers/sample_container/requirements.txt ./requirements.txt
+COPY requirements.txt ./requirements.txt
 RUN pip install -r requirements.txt
 RUN rm ./requirements.txt
 
@@ -27,7 +27,7 @@ ENV AWS_ACCESS_KEY_ID=${AWS_KEY}
 ENV AWS_SECRET_ACCESS_KEY=${AWS_SECRET_KEY}
 
 # COPY folder of code and model
-COPY containers/sample_container/code /usr/code
+COPY code /usr/code
 
 # Set working_directory
 WORKDIR /usr/code
