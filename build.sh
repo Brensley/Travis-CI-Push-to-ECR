@@ -11,5 +11,5 @@ then
   echo "Branch is dev"
 else
   echo "Branch is sandbox"
-   sudo docker build -t sample_container_sandbox -f .dockerfile .
+   sudo docker build -t bftesting -f .dockerfile .
 fi
