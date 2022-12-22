@@ -3,10 +3,10 @@
 
 #!/bin/bash
 
-if [[ $TRAVIS_BRANCH == 'main' ]]
+if [[ $TRAVIS_BRANCH == 'master' ]]
 then
   echo "Branch is master"
-elif [[ $TRAVIS_BRANCH == 'main' ]]
+elif [[ $TRAVIS_BRANCH == 'dev' ]]
 then
   echo "Branch is dev"
 else
